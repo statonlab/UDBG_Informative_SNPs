@@ -1,1 +1,3 @@
 # UDBG_Informative_SNPs
+
+This script was used to parse the genotypes out of a vcf file and to determine if any are informative. Any loci is flagged as informative if it has two different genotypes (homozygous for the reference allele, homozygous for the alternate allele, or heterozygous) for at least two different cultivars. Dossage of heterozygosity (i.e. 0/0/1 or 0/1/1) was not considered sufficient to be flagged as informative. Fully hardcoded for this project; not likely to be useful further without extensive rewriting, particularly in making it more generic in the file name, sample names, sample column numbers, total number of samples, etc.
